@@ -7,8 +7,5 @@ Rails.application.routes.draw do
     resources :post_images  
   end
 
-  scope :api do
-    get "/posts(.:format)" => "posts#index"
-    get "/posts/:id(.:format)" => "posts#show"
-  end
+  root "posts#index"
 end

@@ -16,3 +16,52 @@
 
 
   @import "bootstrap";
+
+.navbar{
+	background-color: #fff;
+  .nav{
+
+  	float: right;
+	  	li{
+	  		margin-right: 30px;
+	  		color: #ff7373;
+	  		a{
+	  			background-color: #fff;
+	  			color: #ff7373;	
+	  		}
+	  		a:hover{
+	  		  	background-color: #ff7373;
+	  		  	color: #fff;		
+	  		}
+	  		a:active{
+	  			background-color: #ff7373;
+	  			color: #fff;	
+	  		}
+	  	}	
+  }
+}
+
+#logo{
+	text-align: left;
+	float: left;
+	font-size: 36px;
+	color: #ff7373;
+	font-weight: bold;
+	margin-left: 30px;
+}
+
+#main-container{
+	margin-left: 20%;
+	margin-right: 20%;
+}
+.post-container{
+	padding: 20px;
+	overflow:hidden;
+
+}
+
+.btn-primary{
+	background-color: #ff7373 !important; 
+	border-color: #ff7373 !important;
+}
+

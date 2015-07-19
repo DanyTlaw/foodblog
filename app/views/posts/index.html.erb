@@ -1,0 +1,12 @@
+<% @posts.each do |post| %>
+	<div class="panel panel-default">
+
+ 		<img src="<%= post.getFeaturedImage.image_url%>" style="max-width:100%;">
+ 		<div class="post-container">
+ 			<p style="font-style:italic;">By Ayako Kyodo; Posted<%= post.created_at.strftime("%d %b. %Y")%></p>
+			<h1><%= post.title %></h1>
+			<p><%= post.content %></p>
+			<%= button_to "Show more", post_path(post.id),method: :get,class: "btn btn-primary",style: "float: right" %>
+		</div>
+	</div>
+<% end %>
