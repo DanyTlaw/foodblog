@@ -5,5 +5,13 @@
 	  <li role="presentation"><a href="#">Blog</a></li>
 	  <li role="presentation"><a href="#">About</a></li>
 	  <li role="presentation"><a href="#">Contact</a></li>
+	  <li>
+	  	 <form action ="<%= posts_path %>" class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search" name="search" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Tags with small letters and a comma between tags">
+            </div>
+            <button type="submit" class="btn btn-primary" ><span class="glyphicon glyphicon-search" ></span></button>
+          </form>
+	  </li>
 	</ul>
 </div>

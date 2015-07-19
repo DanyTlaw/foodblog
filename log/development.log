@@ -2792,3 +2792,2260 @@ Completed 200 OK in 4106ms (Views: 4088.8ms | ActiveRecord: 3.0ms)
 
 
 Started GET "/assets/application.self-a887274980e27ebfcb18e5a41076242a4a1e69d01ba7f3548618993f4965edb9.css?body=1" for ::1 at 2015-07-19 06:49:33 +0200
+
+
+Started GET "/" for ::1 at 2015-07-19 07:15:29 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.2ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (115.3ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (103.1ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (258.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ActsAsTaggableOnMigration (20150719050838)
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36m (500.5ms)[0m  [1mCREATE TABLE "tags" ("id" serial primary key, "name" character varying) [0m
+  [1m[35m (87.4ms)[0m  CREATE TABLE "taggings" ("id" serial primary key, "tag_id" integer, "taggable_id" integer, "taggable_type" character varying, "tagger_id" integer, "tagger_type" character varying, "context" character varying(128), "created_at" timestamp) 
+  [1m[36m (2.0ms)[0m  [1mCREATE  INDEX  "index_taggings_on_tag_id" ON "taggings"  ("tag_id")[0m
+  [1m[35m (2.1ms)[0m  CREATE  INDEX  "index_taggings_on_taggable_id_and_taggable_type_and_context" ON "taggings"  ("taggable_id", "taggable_type", "context")
+  [1m[36mSQL (43.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150719050838"]]
+  [1m[35m (52.6ms)[0m  COMMIT
+Migrating to AddMissingUniqueIndices (20150719050839)
+  [1m[36m (16.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.7ms)[0m  CREATE UNIQUE INDEX  "index_tags_on_name" ON "tags"  ("name")
+  [1m[36m (69.5ms)[0m  [1mDROP INDEX "index_taggings_on_tag_id"[0m
+  [1m[35m (1.2ms)[0m  DROP INDEX "index_taggings_on_taggable_id_and_taggable_type_and_context"
+  [1m[36m (3.0ms)[0m  [1mCREATE UNIQUE INDEX  "taggings_idx" ON "taggings"  ("tag_id", "taggable_id", "taggable_type", "context", "tagger_id", "tagger_type")[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150719050839"]]
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+Migrating to AddTaggingsCounterCacheToTags (20150719050840)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (62.0ms)[0m  [1mALTER TABLE "tags" ADD "taggings_count" integer DEFAULT 0[0m
+  [1m[35mActsAsTaggableOn::Tag Load (1.2ms)[0m  SELECT  "tags".* FROM "tags"  ORDER BY "tags"."id" ASC LIMIT 1000
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150719050840"]]
+  [1m[35m (1.2ms)[0m  COMMIT
+Migrating to AddMissingTaggableIndex (20150719050841)
+  [1m[36m (0.8ms)[0m  [1mBEGIN[0m
+  [1m[35m (2.1ms)[0m  CREATE  INDEX  "index_taggings_on_taggable_id_and_taggable_type_and_context" ON "taggings"  ("taggable_id", "taggable_type", "context")
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150719050841"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+Migrating to ChangeCollationForTagNames (20150719050842)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150719050842"]]
+  [1m[36m (16.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.7ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (19.2ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'active_admin_comments'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (5.1ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'admin_users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (5.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'post_images'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (5.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (5.2ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'taggings'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (5.9ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'tags'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/" for ::1 at 2015-07-19 07:16:14 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (1.1ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (18.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (244.2ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 1176ms (Views: 1064.6ms | ActiveRecord: 55.4ms)
+
+
+Started GET "/admin" for ::1 at 2015-07-19 07:16:26 +0200
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (1.3ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1  ORDER BY "admin_users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/bundler/gems/active_admin-5a2b7b5bc683/app/views/active_admin/page/index.html.arb (1378.9ms)
+Completed 200 OK in 1474ms (Views: 1400.2ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/admin/posts" for ::1 at 2015-07-19 07:16:31 +0200
+Processing by Admin::PostsController#index as HTML
+  [1m[35mAdminUser Load (0.7ms)[0m  SELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1  ORDER BY "admin_users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "posts" LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "posts" LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36m (3.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "posts" LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY "posts"."id" desc LIMIT 30 OFFSET 0[0m
+  [1m[35mPostImage Load (0.8ms)[0m  SELECT "post_images".* FROM "post_images"
+  [1m[36mActsAsTaggableOn::Tagging Load (0.8ms)[0m  [1mSELECT "taggings".* FROM "taggings"[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.6ms)[0m  SELECT "tags".* FROM "tags"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "taggings".* FROM "taggings"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/bundler/gems/active_admin-5a2b7b5bc683/app/views/active_admin/resource/index.html.arb (1024.9ms)
+Completed 200 OK in 1098ms (Views: 1044.5ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/admin/posts/2/edit" for ::1 at 2015-07-19 07:16:36 +0200
+Processing by Admin::PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (0.8ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1  ORDER BY "admin_users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.7ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/bundler/gems/active_admin-5a2b7b5bc683/app/views/active_admin/resource/edit.html.arb (449.1ms)
+Completed 500 Internal Server Error in 499ms (ActiveRecord: 1.5ms)
+
+ActionView::Template::Error (no implicit conversion of Symbol into Integer):
+    1: insert_tag renderer_for(:edit)
+  app/admin/post.rb:9:in `block (3 levels) in <top (required)>'
+  app/admin/post.rb:6:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (27.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.3ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (134.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (92.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (225.3ms)
+
+
+Started GET "/admin/posts/2/edit" for ::1 at 2015-07-19 07:19:42 +0200
+Processing by Admin::PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdminUser Load (0.9ms)[0m  SELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1  ORDER BY "admin_users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "2"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/bundler/gems/active_admin-5a2b7b5bc683/app/views/active_admin/resource/edit.html.arb (660.9ms)
+Completed 200 OK in 844ms (Views: 701.4ms | ActiveRecord: 15.8ms)
+
+
+Started PATCH "/admin/posts/2" for ::1 at 2015-07-19 07:20:02 +0200
+Processing by Admin::PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"M+AbJxJftYdsRyuK3DZ6s+PeWnhYEmOEgygD5ezhekzqrgtV0nM6pNQdBqdbri7bNNm7wHuB4WiQo3EHLuUPNg==", "post"=>{"title"=>"My Sushi ", "content"=>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.", "tag_list"=>"sushi, fish"}, "commit"=>"Update Post", "id"=>"2"}
+  [1m[35mAdminUser Load (1.0ms)[0m  SELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1  ORDER BY "admin_users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.9ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (127.8ms)[0m  UPDATE "posts" SET "updated_at" = $1 WHERE "posts"."id" = $2  [["updated_at", "2015-07-19 05:20:02.857469"], ["id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (67.9ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('sushi') OR LOWER(name) = LOWER('fish'))[0m
+  [1m[35mActsAsTaggableOn::Tag Exists (0.6ms)[0m  SELECT  1 AS one FROM "tags" WHERE "tags"."name" = 'sushi' LIMIT 1
+  [1m[36mSQL (26.8ms)[0m  [1mINSERT INTO "tags" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "sushi"]]
+  [1m[35mActsAsTaggableOn::Tag Exists (1.4ms)[0m  SELECT  1 AS one FROM "tags" WHERE "tags"."name" = 'fish' LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "tags" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "fish"]]
+  [1m[35mActsAsTaggableOn::Tag Load (1.1ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (85.7ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 1 AND "taggings"."taggable_type" = 'Post' AND "taggings"."taggable_id" = 2 AND "taggings"."context" = 'tags' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (2.1ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 1], ["context", "tags"], ["taggable_id", 2], ["taggable_type", "Post"], ["created_at", "2015-07-19 05:20:03.412012"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.5ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (15.8ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (1.4ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 2 AND "taggings"."taggable_type" = 'Post' AND "taggings"."taggable_id" = 2 AND "taggings"."context" = 'tags' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["tag_id", 2], ["context", "tags"], ["taggable_id", 2], ["taggable_type", "Post"], ["created_at", "2015-07-19 05:20:03.515555"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.5ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mSQL (0.9ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1  [["id", 2]]
+  [1m[36m (44.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/admin/posts/2
+Completed 302 Found in 835ms (ActiveRecord: 384.8ms)
+
+
+Started GET "/admin/posts/2" for ::1 at 2015-07-19 07:20:03 +0200
+Processing by Admin::PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdminUser Load (0.9ms)[0m  SELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1  ORDER BY "admin_users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (1.3ms)[0m  SELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = $1 AND "active_admin_comments"."resource_id" = $2 AND "active_admin_comments"."namespace" = $3  [["resource_type", "Post"], ["resource_id", "2"], ["namespace", "admin"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = $1 AND "active_admin_comments"."resource_id" = $2 AND "active_admin_comments"."namespace" = $3[0m  [["resource_type", "Post"], ["resource_id", "2"], ["namespace", "admin"]]
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/bundler/gems/active_admin-5a2b7b5bc683/app/views/active_admin/resource/show.html.arb (812.5ms)
+Completed 200 OK in 847ms (Views: 837.8ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:20:09 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.7ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (1.1ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (25.5ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 299ms (Views: 293.1ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:27:43 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.8ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (2.4ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (69.4ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 568ms (Views: 551.0ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:27:58 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.6ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (11.1ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 315ms (Views: 312.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:28:55 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.8ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.7ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (45.7ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 3752ms (Views: 3740.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.self-9eca0e32600fe3d8d1acc5893ae15687787f84c6eacb51ab888e576668ce7734.css?body=1" for ::1 at 2015-07-19 07:28:59 +0200
+
+
+Started GET "/" for ::1 at 2015-07-19 07:29:57 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.2ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (1.0ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.8ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (50.2ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 624ms (Views: 612.7ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:34:45 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.8ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.6ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (74.5ms)
+  Rendered layouts/_navigation.html.erb (1.8ms)
+Completed 200 OK in 792ms (Views: 770.4ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:39:13 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (1.3ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (7.1ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (63.8ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+Completed 200 OK in 5953ms (Views: 5926.5ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/assets/font-awesome.min.self-ef8286cf8b3fe0b395695f813e799dd51105f9b695650e7757d09fcc51b088eb.css?body=1" for ::1 at 2015-07-19 07:39:19 +0200
+
+
+Started GET "/assets/font-awesome.self-9c2d00740ee2466c25a41b98076ffe4067338fd8a0a39dc5996cac848b02bcc8.css?body=1" for ::1 at 2015-07-19 07:39:19 +0200
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-07-19 07:39:19 +0200
+
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.1ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (51.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (351.0ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (100.1ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (225.6ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.3.0" for ::1 at 2015-07-19 07:39:21 +0200
+
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.9ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.9ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (210.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (76.2ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (183.5ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.3.0" for ::1 at 2015-07-19 07:39:21 +0200
+
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.0ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (198.8ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (76.9ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (196.7ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-07-19 07:39:22 +0200
+
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.1ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (229.9ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (72.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (175.6ms)
+
+
+Started GET "/fonts/fontawesome-webfont.woff?v=4.3.0" for ::1 at 2015-07-19 07:39:22 +0200
+
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.9ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (203.8ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (73.3ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (170.8ms)
+
+
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.3.0" for ::1 at 2015-07-19 07:39:22 +0200
+
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (203.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (75.1ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (166.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:40:09 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.8ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.8ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (50.7ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+Completed 200 OK in 694ms (Views: 673.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/fonts/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-07-19 07:40:10 +0200
+
+ActionController::RoutingError (No route matches [GET] "/fonts/bootstrap/glyphicons-halflings-regular.woff"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.3ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (174.8ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (90.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (208.3ms)
+
+
+Started GET "/fonts/bootstrap/glyphicons-halflings-regular.ttf" for ::1 at 2015-07-19 07:40:11 +0200
+
+ActionController::RoutingError (No route matches [GET] "/fonts/bootstrap/glyphicons-halflings-regular.ttf"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/admin/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (189.1ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (86.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (192.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:41:15 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.7ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.9ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (55.2ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+Completed 200 OK in 4464ms (Views: 4451.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/application.self-23316a1403e7d790dfa9e13d5d6e392696bf280b857f7e2fb65f10d9a2fb0199.css?body=1" for ::1 at 2015-07-19 07:41:19 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fc969dc1c6ff531abcf368089dcbaf5775133b0626ff56b52301a059fc0f9e1e.woff" for ::1 at 2015-07-19 07:41:19 +0200
+
+
+Started GET "/posts?search=sushi" for ::1 at 2015-07-19 07:44:44 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>"sushi"}
+  [1m[36mPost Load (1.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.8ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.9ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (66.6ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 828ms (Views: 808.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/posts?search=gurke" for ::1 at 2015-07-19 07:44:55 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>"gurke"}
+  [1m[35mPost Load (1.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.5ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+Completed 200 OK in 178ms (Views: 174.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:48:32 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.7ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.7ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (43.6ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+Completed 200 OK in 724ms (Views: 712.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:48:48 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.4ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (1.0ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_navigation.html.erb (2.4ms)
+Completed 200 OK in 325ms (Views: 321.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:49:30 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.6ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.7ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (16.8ms)
+  Rendered layouts/_navigation.html.erb (3.3ms)
+Completed 200 OK in 560ms (Views: 554.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:49:49 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.8ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (35.9ms)
+  Rendered layouts/_navigation.html.erb (1.8ms)
+Completed 200 OK in 543ms (Views: 528.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:50:22 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.5ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.7ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (27.4ms)
+  Rendered layouts/_navigation.html.erb (6.6ms)
+Completed 500 Internal Server Error in 568ms (ActiveRecord: 2.3ms)
+
+SyntaxError (/Users/admin/Documents/ruby_workspace/foodblog/app/views/layouts/_navigation.html.erb:15: syntax error, unexpected =>, expecting :: or '[' or '.'
+....append=( submit_tag , :name => nil , class: "glyphicon glyp...
+...                               ^
+/Users/admin/Documents/ruby_workspace/foodblog/app/views/layouts/_navigation.html.erb:15: Can't assign to nil
+...d=( submit_tag , :name => nil , class: "glyphicon glyphicon-...
+...                               ^):
+  app/views/layouts/_navigation.html.erb:15: syntax error, unexpected =>, expecting :: or '[' or '.'
+  app/views/layouts/_navigation.html.erb:15: Can't assign to nil
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___819286515317299852_70145409062220'
+
+
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (22.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (14.2ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (148.0ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (84.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (204.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:50:37 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.7ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (1.0ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (18.5ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+Completed 200 OK in 228ms (Views: 222.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:50:45 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.5ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.6ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_navigation.html.erb (78.1ms)
+Completed 500 Internal Server Error in 322ms (ActiveRecord: 2.0ms)
+
+ActionView::Template::Error (undefined method `submit' for #<#<Class:0x007f980411b1d0>:0x007f9803077838>):
+    12:             </div>
+    13:             <button type="submit" class="btn btn-primary" id="sbutton"><span class="glyphicon glyphicon-search"></span></button>
+    14:                 <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Search" %>
+    15:    				<%= submit "Search", :name => nil , class: "glyphicon glyphicon-search"%>
+    16:           </form>
+    17: 	  </li>
+    18: 	</ul>
+  app/views/layouts/_navigation.html.erb:15:in `_app_views_layouts__navigation_html_erb___1267843362422190492_70145431608780'
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___819286515317299852_70145409062220'
+
+
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (94.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (5.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (145.0ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (259.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:51:48 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.8ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (15.6ms)
+  Rendered layouts/_navigation.html.erb (2.7ms)
+Completed 200 OK in 520ms (Views: 514.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:52:13 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.4ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.5ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (26.0ms)
+  Rendered layouts/_navigation.html.erb (2.5ms)
+Completed 200 OK in 687ms (Views: 678.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:52:26 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.4ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_navigation.html.erb (1.8ms)
+Completed 200 OK in 267ms (Views: 263.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:53:04 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.6ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.5ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (52.4ms)
+  Rendered layouts/_navigation.html.erb (7.3ms)
+Completed 200 OK in 580ms (Views: 559.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:54:12 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.9ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (1.8ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (60.7ms)
+  Rendered layouts/_navigation.html.erb (10.4ms)
+Completed 200 OK in 775ms (Views: 754.9ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:54:35 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.5ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.6ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_navigation.html.erb (1.8ms)
+Completed 200 OK in 233ms (Views: 229.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:54:54 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.4ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_navigation.html.erb (1.6ms)
+Completed 200 OK in 268ms (Views: 265.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:54:57 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.4ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.7ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+Completed 200 OK in 321ms (Views: 318.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:57:30 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.8ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (48.1ms)
+  Rendered layouts/_navigation.html.erb (4.1ms)
+Completed 200 OK in 627ms (Views: 604.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:57:43 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.4ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.6ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+Completed 200 OK in 286ms (Views: 282.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:58:12 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.8ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (46.5ms)
+  Rendered layouts/_navigation.html.erb (3.6ms)
+Completed 200 OK in 721ms (Views: 701.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:58:26 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.4ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+Completed 200 OK in 250ms (Views: 248.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:58:41 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (1.0ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 298ms (Views: 294.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 07:59:37 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (7.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (3.3ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.8ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (121.6ms)
+  Rendered layouts/_navigation.html.erb (4.2ms)
+Completed 200 OK in 658ms (Views: 629.4ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 08:00:55 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.2ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.8ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (1.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (50.0ms)
+  Rendered layouts/_navigation.html.erb (3.9ms)
+Completed 200 OK in 728ms (Views: 711.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 08:05:15 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.6ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.7ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (92.1ms)
+  Rendered layouts/_navigation.html.erb (1.7ms)
+Completed 200 OK in 621ms (Views: 587.9ms | ActiveRecord: 24.1ms)
+
+
+Started GET "/posts?search=gurke" for ::1 at 2015-07-19 08:05:21 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>"gurke"}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `search' for #<PostsController:0x007f98040bb758>):
+  app/controllers/posts_controller.rb:5:in `index'
+
+
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.2ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (125.0ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (73.8ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (165.5ms)
+
+
+Started GET "/posts?search=gurke" for ::1 at 2015-07-19 08:05:59 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>"gurke"}
+  [1m[35mPost Load (0.9ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" IN (NULL, NULL)
+Completed 404 Not Found in 23ms (ActiveRecord: 7.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Posts with 'id': (all, {:conditions=>["tag_list LIKE ?", "%gurke%"]}) (found 0 results, but was looking for 2)):
+  app/controllers/posts_controller.rb:5:in `index'
+
+
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (100.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (75.3ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (174.2ms)
+
+
+Started GET "/posts?search=fish" for ::1 at 2015-07-19 08:06:16 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>"fish"}
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" IN (NULL, NULL)[0m
+Completed 404 Not Found in 7ms (ActiveRecord: 0.7ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Posts with 'id': (all, {:conditions=>["tag_list LIKE ?", "%fish%"]}) (found 0 results, but was looking for 2)):
+  app/controllers/posts_controller.rb:5:in `index'
+
+
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (104.0ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (69.3ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (174.7ms)
+
+
+Started GET "/posts?search=fish" for ::1 at 2015-07-19 08:07:08 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>"fish"}
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" IN (NULL, NULL)
+Completed 404 Not Found in 28ms (ActiveRecord: 6.9ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Posts with 'id': (all, {:conditions=>["tag_list LIKE ?", "%fish%"]}) (found 0 results, but was looking for 2)):
+  app/controllers/posts_controller.rb:6:in `index'
+
+
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (95.3ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (79.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (176.6ms)
+
+
+Started GET "/posts?search=fish" for ::1 at 2015-07-19 08:09:23 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>"fish"}
+  [1m[36mActsAsTaggableOn::Tag Load (3.0ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('%fish%'))[0m
+  [1m[35mPost Load (58.4ms)[0m  SELECT "posts".* FROM "posts" WHERE (title LIKE '%fish%')
+  [1m[36mPost Load (1.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (1 = 0)[0m
+  Rendered posts/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+Completed 200 OK in 642ms (Views: 561.9ms | ActiveRecord: 65.4ms)
+
+
+Started GET "/posts?search=fish" for ::1 at 2015-07-19 08:09:28 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>"fish"}
+  [1m[35mActsAsTaggableOn::Tag Load (0.6ms)[0m  SELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('%fish%'))
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (title LIKE '%fish%')[0m
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" WHERE (1 = 0)
+  Rendered posts/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 142ms (Views: 137.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts?search=Sushi" for ::1 at 2015-07-19 08:09:39 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>"Sushi"}
+  [1m[36mActsAsTaggableOn::Tag Load (0.7ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('%sushi%'))[0m
+  [1m[35mPost Load (1.1ms)[0m  SELECT "posts".* FROM "posts" WHERE (title LIKE '%Sushi%')
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (1 = 0)[0m
+  [1m[35mPostImage Load (0.6ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.7ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (37.0ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 227ms (Views: 202.2ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/posts?search=fish" for ::1 at 2015-07-19 08:09:46 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>"fish"}
+  [1m[35mActsAsTaggableOn::Tag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('%fish%'))
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (title LIKE '%fish%')[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" WHERE (1 = 0)
+  Rendered posts/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 124ms (Views: 119.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/posts?search=sushi" for ::1 at 2015-07-19 08:09:50 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>"sushi"}
+  [1m[36mActsAsTaggableOn::Tag Load (0.7ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('%sushi%'))[0m
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" WHERE (title LIKE '%sushi%')
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (1 = 0)[0m
+  Rendered posts/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 115ms (Views: 110.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/posts?search=Sushi" for ::1 at 2015-07-19 08:09:53 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>"Sushi"}
+  [1m[35mActsAsTaggableOn::Tag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('%sushi%'))
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (title LIKE '%Sushi%')[0m
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts" WHERE (1 = 0)
+  [1m[36mPostImage Load (0.6ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 134ms (Views: 125.0ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/posts?search=sushi" for ::1 at 2015-07-19 08:10:07 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>"sushi"}
+  [1m[36mActsAsTaggableOn::Tag Load (0.7ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('%sushi%'))[0m
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" WHERE (1 = 0)
+  Rendered posts/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 333ms (Views: 324.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/posts?search=sushi" for ::1 at 2015-07-19 08:11:17 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>"sushi"}
+  [1m[36mActsAsTaggableOn::Tag Load (1.4ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('sushi'))[0m
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts" WHERE (title LIKE '%sushi%')
+  [1m[36mPost Load (10.7ms)[0m  [1mSELECT "posts".* FROM "posts" JOIN taggings posts_taggings_451dcf9  ON posts_taggings_451dcf9.taggable_id = "posts".id AND posts_taggings_451dcf9.taggable_type = 'Post' AND posts_taggings_451dcf9.tag_id = 1[0m
+  [1m[35mPostImage Load (0.5ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.5ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (68.3ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 677ms (Views: 611.2ms | ActiveRecord: 23.9ms)
+
+
+Started GET "/posts?search=Sushi" for ::1 at 2015-07-19 08:11:22 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>"Sushi"}
+  [1m[35mActsAsTaggableOn::Tag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('sushi'))
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (title LIKE '%Sushi%')[0m
+  [1m[35mPost Load (1.2ms)[0m  SELECT "posts".* FROM "posts" JOIN taggings posts_taggings_451dcf9  ON posts_taggings_451dcf9.taggable_id = "posts".id AND posts_taggings_451dcf9.taggable_type = 'Post' AND posts_taggings_451dcf9.tag_id = 1
+  [1m[36mPostImage Load (0.5ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.6ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 139ms (Views: 129.9ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/posts?search=my" for ::1 at 2015-07-19 08:11:27 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>"my"}
+  [1m[36mActsAsTaggableOn::Tag Load (0.9ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('my'))[0m
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts" WHERE (title LIKE '%my%')
+  [1m[36mPost Load (1.8ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (1 = 0)[0m
+  Rendered posts/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 134ms (Views: 114.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/posts?search=My" for ::1 at 2015-07-19 08:11:30 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>"My"}
+  [1m[35mActsAsTaggableOn::Tag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('my'))
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (title LIKE '%My%')[0m
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" WHERE (1 = 0)
+  [1m[36mPostImage Load (0.4ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 118ms (Views: 112.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/posts?search=my" for ::1 at 2015-07-19 08:12:58 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>"my"}
+  [1m[36mActsAsTaggableOn::Tag Load (11.3ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('my'))[0m
+  [1m[35mPost Load (92.2ms)[0m  SELECT "posts".* FROM "posts" WHERE (title.downcase LIKE '%my%')
+PG::UndefinedTable: ERROR:  missing FROM-clause entry for table "title"
+LINE 1: SELECT "posts".* FROM "posts" WHERE (title.downcase LIKE '%m...
+                                             ^
+: SELECT "posts".* FROM "posts" WHERE (title.downcase LIKE '%my%')
+Completed 500 Internal Server Error in 124ms (ActiveRecord: 103.5ms)
+
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  missing FROM-clause entry for table "title"
+LINE 1: SELECT "posts".* FROM "posts" WHERE (title.downcase LIKE '%m...
+                                             ^
+: SELECT "posts".* FROM "posts" WHERE (title.downcase LIKE '%my%')):
+  app/controllers/posts_controller.rb:7:in `index'
+
+
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.8ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (67.9ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (171.9ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 08:15:02 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.7ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.6ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (60.0ms)
+  Rendered layouts/_navigation.html.erb (1.6ms)
+Completed 200 OK in 572ms (Views: 537.9ms | ActiveRecord: 21.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 08:15:25 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.9ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.4ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.4ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+Completed 200 OK in 257ms (Views: 254.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 08:18:31 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.8ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.7ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (50.0ms)
+  Rendered layouts/_navigation.html.erb (3.5ms)
+Completed 200 OK in 783ms (Views: 768.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 08:20:00 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.7ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (1.0ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (55.6ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+Completed 200 OK in 1150ms (Views: 1126.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for ::1 at 2015-07-19 08:20:02 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-19 08:20:02 +0200
+
+
+Started GET "/" for ::1 at 2015-07-19 08:31:03 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (1.1ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (1.8ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (275.0ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+Completed 200 OK in 2657ms (Views: 2587.1ms | ActiveRecord: 17.6ms)
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2015-07-19 08:31:06 +0200
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2015-07-19 08:31:06 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2015-07-19 08:31:06 +0200
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2015-07-19 08:31:06 +0200
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2015-07-19 08:31:06 +0200
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2015-07-19 08:31:06 +0200
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2015-07-19 08:31:06 +0200
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2015-07-19 08:31:06 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2015-07-19 08:31:06 +0200
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2015-07-19 08:31:06 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2015-07-19 08:31:06 +0200
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2015-07-19 08:31:06 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-07-19 08:31:06 +0200
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-07-19 08:31:06 +0200
+
+
+Started GET "/" for ::1 at 2015-07-19 08:33:11 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (6.5ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (2.5ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (62.7ms)
+  Rendered layouts/_navigation.html.erb (3.4ms)
+Completed 200 OK in 1508ms (Views: 1485.2ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 08:33:44 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.6ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (1.0ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 1171ms (Views: 1167.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/posts.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for ::1 at 2015-07-19 08:33:45 +0200
+
+
+Started GET "/" for ::1 at 2015-07-19 08:35:54 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.9ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.7ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (33.1ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+Completed 200 OK in 1349ms (Views: 1335.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/posts.self-263037566dec4e7baec4b07344aa3a52132b7f004a1997b011f4fb503b3f9404.js?body=1" for ::1 at 2015-07-19 08:35:56 +0200
+
+
+Started GET "/posts?search=" for ::1 at 2015-07-19 08:35:59 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>""}
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts" WHERE (1 = 0)
+  Rendered posts/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+Completed 200 OK in 243ms (Views: 240.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 08:36:20 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.6ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.9ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 627ms (Views: 624.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.self-c00a581be8680035f6c8d78395b94736c1cc43ab1fa03ae9545b24df85ce8d92.js?body=1" for ::1 at 2015-07-19 08:36:20 +0200
+
+
+Started GET "/" for ::1 at 2015-07-19 08:37:46 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.0ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.9ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (1.6ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (46.7ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 1435ms (Views: 1421.8ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/application.self-44aec4171817956ce3ebc5a0f1c611253036bddff62d4e528a9180f7232459ff.js?body=1" for ::1 at 2015-07-19 08:37:47 +0200
+
+
+Started GET "/" for ::1 at 2015-07-19 08:38:06 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.9ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.6ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (28.3ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 638ms (Views: 634.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.self-1d0ec2a7416bc13c2aa8bf0662df4f6881829cb7f83b099a4777e4dcdc4568a8.js?body=1" for ::1 at 2015-07-19 08:38:06 +0200
+
+
+Started GET "/" for ::1 at 2015-07-19 08:38:33 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.5ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (13.6ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+Completed 200 OK in 672ms (Views: 665.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/application.self-aa26fcc46fa93c4d65b0eebd567e50bc228c1bb8ca12a762b6bb6e1481b34317.js?body=1" for ::1 at 2015-07-19 08:38:33 +0200
+
+
+Started GET "/" for ::1 at 2015-07-19 08:42:32 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.7ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.7ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (46.7ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 1192ms (Views: 1166.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/posts.self-01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b.js?body=1" for ::1 at 2015-07-19 08:42:33 +0200
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-07-19 08:42:33 +0200
+
+
+Started GET "/" for ::1 at 2015-07-19 08:45:10 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.7ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.8ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (34.8ms)
+  Rendered layouts/_navigation.html.erb (3.1ms)
+Completed 200 OK in 1149ms (Views: 1135.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.self-61303c243f50a71d7241c20ce379703b0ae481aa50b874bab7ad4f28faa3a7d5.js?body=1" for ::1 at 2015-07-19 08:45:11 +0200
+
+
+Started GET "/posts?search=" for ::1 at 2015-07-19 08:45:17 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>""}
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (1 = 0)[0m
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 263ms (Views: 261.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 08:47:20 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.8ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.8ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (60.5ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+Completed 200 OK in 1332ms (Views: 1318.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/posts.self-12d525819641b238eb9841369524d13f95129ee8c2b35ef4341c86b061e23772.js?body=1" for ::1 at 2015-07-19 08:47:22 +0200
+
+
+Started GET "/assets/application.self-b145b2e60d5c035ea9a626a635d798edffb4e29eb49daa9b1f687a0e258e8c87.js?body=1" for ::1 at 2015-07-19 08:47:22 +0200
+
+
+Started GET "/" for ::1 at 2015-07-19 08:48:27 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.8ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.8ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (33.6ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+Completed 200 OK in 1183ms (Views: 1162.9ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/application.self-9f8a301d9a46d46e4a2ce9e06f32171336725ba331306d019ff03af1014ffbb1.js?body=1" for ::1 at 2015-07-19 08:48:29 +0200
+
+
+Started GET "/" for ::1 at 2015-07-19 08:51:17 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.7ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (1.0ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.8ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (45.8ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 1369ms (Views: 1355.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/application.self-d816c6434c342b0a753879827ef75b0fafb15cc51b8f9e7ef92d5bf4a094a30d.js?body=1" for ::1 at 2015-07-19 08:51:19 +0200
+
+
+Started GET "/" for ::1 at 2015-07-19 08:53:15 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.7ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.4ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (74.2ms)
+  Rendered layouts/_navigation.html.erb (1.6ms)
+Completed 200 OK in 1454ms (Views: 1441.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/application.self-cabdc2e796de0898b4ecbad3b4dbe5e7da85ea3eddc68ccf2ef6f9e9598cb38f.js?body=1" for ::1 at 2015-07-19 08:53:16 +0200
+
+
+Started GET "/" for ::1 at 2015-07-19 08:54:55 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.8ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.8ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (37.6ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 1260ms (Views: 1237.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-07-19 08:54:57 +0200
+
+
+Started GET "/assets/application.self-1c78f706571db54c6a0afea643b3fe841fcdd5bcfbcbf8a28d0beb34880a6892.js?body=1" for ::1 at 2015-07-19 08:54:57 +0200
+
+
+Started GET "/" for ::1 at 2015-07-19 08:56:05 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (1.1ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.0ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (65.4ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+Completed 200 OK in 1214ms (Views: 1193.7ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/application.self-23c138f19f62bd8c3dc59a257a7759727230231a982aaef9b7a67576b46c356b.js?body=1" for ::1 at 2015-07-19 08:56:06 +0200
+
+
+Started GET "/posts?search=" for ::1 at 2015-07-19 08:56:10 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>""}
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts" WHERE (1 = 0)
+  Rendered posts/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+Completed 200 OK in 285ms (Views: 283.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts?search=" for ::1 at 2015-07-19 08:56:14 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>""}
+  [1m[36mPost Load (0.8ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (1 = 0)[0m
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 213ms (Views: 211.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 08:57:46 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.7ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (1.1ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (52.8ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 1269ms (Views: 1259.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.self-fe12cafca93852ae383cd42f82c0402ae8289dcfecf1d39f6cab809daceac1a7.js?body=1" for ::1 at 2015-07-19 08:57:48 +0200
+
+
+Started GET "/posts?search=My" for ::1 at 2015-07-19 09:38:12 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>"My"}
+  [1m[35mActsAsTaggableOn::Tag Load (1.5ms)[0m  SELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('my'))
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (1 = 0)[0m
+  Rendered posts/index.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+Completed 200 OK in 2126ms (Views: 2032.2ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 09:38:29 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (1.4ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (1.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (209.8ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 715ms (Views: 694.9ms | ActiveRecord: 19.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 09:38:54 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.8ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.8ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.2ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (17.4ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 519ms (Views: 512.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 09:39:22 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.7ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (1.2ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 465ms (Views: 461.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/posts?search=fish+sushi" for ::1 at 2015-07-19 09:39:44 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>"fish sushi"}
+  [1m[36mActsAsTaggableOn::Tag Load (0.8ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('fish sushi'))[0m
+  [1m[35mPost Load (1.2ms)[0m  SELECT "posts".* FROM "posts" WHERE (1 = 0)
+  Rendered posts/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+Completed 200 OK in 578ms (Views: 571.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/posts?search=sushi%2C+fish" for ::1 at 2015-07-19 09:39:49 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>"sushi, fish"}
+  [1m[36mActsAsTaggableOn::Tag Load (0.7ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('sushi') OR LOWER(name) = LOWER('fish'))[0m
+  [1m[35mPost Load (24.9ms)[0m  SELECT "posts".* FROM "posts" JOIN taggings posts_taggings_451dcf9  ON posts_taggings_451dcf9.taggable_id = "posts".id AND posts_taggings_451dcf9.taggable_type = 'Post' AND posts_taggings_451dcf9.tag_id = 1 JOIN taggings posts_taggings_64875fc  ON posts_taggings_64875fc.taggable_id = "posts".id AND posts_taggings_64875fc.taggable_type = 'Post' AND posts_taggings_64875fc.tag_id = 2
+  [1m[36mPostImage Load (1.1ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (1.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (39.9ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 373ms (Views: 342.1ms | ActiveRecord: 28.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 09:40:19 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (1.1ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.9ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+Completed 200 OK in 674ms (Views: 669.7ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 09:46:11 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (8.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (1.6ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (1.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (85.2ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+Completed 200 OK in 1302ms (Views: 1262.6ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 09:46:41 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.9ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.7ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (41.8ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 1233ms (Views: 1221.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 09:46:57 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.2ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.7ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (9.9ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 680ms (Views: 676.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 09:47:14 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (1.4ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.6ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 874ms (Views: 870.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 09:47:23 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.4ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (10.8ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 527ms (Views: 523.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 09:47:40 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.7ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.8ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 770ms (Views: 766.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 09:47:48 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.5ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 727ms (Views: 724.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 09:48:13 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.4ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.7ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 646ms (Views: 642.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 09:49:48 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.8ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.8ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (56.8ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+Completed 200 OK in 1124ms (Views: 1111.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 09:50:06 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.4ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.7ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 487ms (Views: 482.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 09:50:55 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (1.3ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.8ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (50.9ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 927ms (Views: 912.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 09:52:57 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (1.0ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.8ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (53.6ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 1298ms (Views: 1280.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 09:54:24 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (4.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (1.4ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.8ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (47.4ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 1149ms (Views: 1123.0ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 09:58:13 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.6ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.7ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (52.4ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+Completed 200 OK in 1000ms (Views: 977.7ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 10:50:25 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (4.8ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.8ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (1.6ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (65.3ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  [1m[36m (47.9ms)[0m  [1mSELECT COUNT(*) FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id[0m
+  [1m[35mActsAsTaggableOn::Tag Load (3.0ms)[0m  SELECT tags.*, taggings.tags_count AS count FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id
+  Rendered layouts/_tagcloud.html.erb (164.0ms)
+Completed 500 Internal Server Error in 4508ms (ActiveRecord: 58.1ms)
+
+ActionView::Template::Error (undefined method `tag_path' for #<#<Class:0x007fcc3afb5668>:0x007fcc3ace5cf8>):
+    1: <div class="tag-cloud">
+    2: 	<% tag_cloud Post.tag_counts, %w[s m l] do |tag, css_class| %>
+    3:     	<%= link_to tag.name, tag_path(tag.name), class: css_class %>
+    4:   	<% end %>
+    5: </div>
+  app/views/layouts/_tagcloud.html.erb:3:in `block in _app_views_layouts__tagcloud_html_erb__4372552344908101513_70257585721900'
+  app/views/layouts/_tagcloud.html.erb:2:in `_app_views_layouts__tagcloud_html_erb__4372552344908101513_70257585721900'
+  app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__1528681621532923679_70257567099940'
+
+
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (136.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (108.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (268.1ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 10:53:17 +0200
+Processing by PostsController#index as HTML
+  [1m[36m (4.3ms)[0m  [1mSELECT COUNT(*) FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id[0m
+  [1m[35mActsAsTaggableOn::Tag Load (1.9ms)[0m  SELECT tags.*, taggings.tags_count AS count FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id
+  [1m[36mPost Load (0.8ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (206.0ms)
+Completed 500 Internal Server Error in 281ms (ActiveRecord: 7.0ms)
+
+ActionView::Template::Error (undefined method `tag_path' for #<#<Class:0x007fcc3afb5668>:0x007fcc3cf9ebc8>):
+    1: <div class="tag-cloud">
+    2: 	<% tag_cloud Post.tag_counts, %w[s m l] do |tag, css_class| %>
+    3:     	<%= link_to tag.name, tag_path(tag.name), class: css_class %>
+    4:   	<% end %>
+    5: </div>
+    6: <% @posts.each do |post| %>
+  app/views/posts/index.html.erb:3:in `block in _app_views_posts_index_html_erb___338475604342790850_70257586531440'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb___338475604342790850_70257586531440'
+
+
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (56.3ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (15.0ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (191.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (85.2ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.2ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (271.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 12:18:25 +0200
+Processing by PostsController#index as HTML
+  [1m[35m (6.0ms)[0m  SELECT COUNT(*) FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id
+  [1m[36mActsAsTaggableOn::Tag Load (2.8ms)[0m  [1mSELECT tags.*, taggings.tags_count AS count FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id[0m
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (188.5ms)
+Completed 500 Internal Server Error in 264ms (ActiveRecord: 9.3ms)
+
+ActionView::Template::Error (undefined method `tag_path' for #<#<Class:0x007fcc3afb5668>:0x007fcc38d7eb58>):
+    1: <div class="tag-cloud">
+    2: 	<% tag_cloud Post.tag_counts, %w[s m l] do |tag, css_class| %>
+    3:     	<%= link_to tag.name, tag_path(tag.name), class: css_class %>
+    4:   	<% end %>
+    5: </div>
+    6: <% @posts.each do |post| %>
+  app/views/posts/index.html.erb:3:in `block in _app_views_posts_index_html_erb___338475604342790850_70257586531440'
+  app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb___338475604342790850_70257586531440'
+
+
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.1ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (14.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (287.1ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (5.0ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (143.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (560.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 12:19:22 +0200
+Processing by PostsController#index as HTML
+  [1m[36m (5.1ms)[0m  [1mSELECT COUNT(*) FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id[0m
+  [1m[35mActsAsTaggableOn::Tag Load (2.5ms)[0m  SELECT tags.*, taggings.tags_count AS count FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id
+  [1m[36mPost Load (0.8ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.6ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.6ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (90.5ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT tags.*, taggings.tags_count AS count FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id[0m
+  Rendered layouts/_tagcloud.html.erb (34.0ms)
+Completed 500 Internal Server Error in 1142ms (ActiveRecord: 9.7ms)
+
+ActionView::Template::Error (undefined method `tag_path' for #<#<Class:0x007fcc3afb5668>:0x007fcc3cd39798>):
+    1: <div class="tag-cloud">
+    2: 	<% tag_cloud Post.tag_counts, %w[s m l] do |tag, css_class| %>
+    3:     	<%= link_to tag.name, tag_path(tag.name), class: css_class %>
+    4:   	<% end %>
+    5: </div>
+  app/views/layouts/_tagcloud.html.erb:3:in `block in _app_views_layouts__tagcloud_html_erb__4372552344908101513_70257585721900'
+  app/views/layouts/_tagcloud.html.erb:2:in `_app_views_layouts__tagcloud_html_erb__4372552344908101513_70257585721900'
+  app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__1528681621532923679_70257567099940'
+
+
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.2ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (95.9ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (74.2ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (168.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 12:19:56 +0200
+Processing by PostsController#index as HTML
+  [1m[35m (4.9ms)[0m  SELECT COUNT(*) FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id
+  [1m[36mActsAsTaggableOn::Tag Load (2.6ms)[0m  [1mSELECT tags.*, taggings.tags_count AS count FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id[0m
+  [1m[35mPost Load (1.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (3.4ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (74.8ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_tagcloud.html.erb (1.1ms)
+Completed 200 OK in 1156ms (Views: 1129.4ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/assets/application.self-a488affa2d5aae25ccc46b6c5f3421a59d0ec13fb5aaba0170b5e523d072a85b.css?body=1" for ::1 at 2015-07-19 12:19:58 +0200
+
+
+Started GET "/posts/sushi" for ::1 at 2015-07-19 12:20:06 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"sushi"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 252ms (ActiveRecord: 0.4ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=sushi):
+  app/controllers/posts_controller.rb:15:in `show'
+
+
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (74.1ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (192.4ms)
+
+
+Started GET "/posts/sushi" for ::1 at 2015-07-19 12:20:07 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"sushi"}
+  [1m[35mPost Load (0.7ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.7ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=sushi):
+  app/controllers/posts_controller.rb:15:in `show'
+
+
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.8ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (71.0ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (162.9ms)
+
+
+Started GET "/posts/sushi" for ::1 at 2015-07-19 12:20:07 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"sushi"}
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.5ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=sushi):
+  app/controllers/posts_controller.rb:15:in `show'
+
+
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.5ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.9ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (93.9ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/admin/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (182.9ms)
+
+
+Started GET "/posts?search=sushi" for ::1 at 2015-07-19 12:20:16 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"search"=>"sushi"}
+  [1m[35mActsAsTaggableOn::Tag Load (4.9ms)[0m  SELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('sushi'))
+  [1m[36m (3.4ms)[0m  [1mSELECT COUNT(*) FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id[0m
+  [1m[35mActsAsTaggableOn::Tag Load (2.5ms)[0m  SELECT tags.*, taggings.tags_count AS count FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id
+  [1m[36mPost Load (1.4ms)[0m  [1mSELECT "posts".* FROM "posts" JOIN taggings posts_taggings_451dcf9  ON posts_taggings_451dcf9.taggable_id = "posts".id AND posts_taggings_451dcf9.taggable_type = 'Post' AND posts_taggings_451dcf9.tag_id = 1[0m
+  [1m[35mPostImage Load (0.5ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.2ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (23.0ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_tagcloud.html.erb (0.1ms)
+Completed 200 OK in 771ms (Views: 744.6ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 12:22:23 +0200
+Processing by PostsController#index as HTML
+  [1m[35m (2.8ms)[0m  SELECT COUNT(*) FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id
+  [1m[36mActsAsTaggableOn::Tag Load (1.7ms)[0m  [1mSELECT tags.*, taggings.tags_count AS count FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id[0m
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.6ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.6ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (88.2ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_tagcloud.html.erb (0.1ms)
+Completed 200 OK in 1533ms (Views: 1510.3ms | ActiveRecord: 17.9ms)
+
+
+Started GET "/tags/sushi" for ::1 at 2015-07-19 12:22:28 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"tag"=>"sushi"}
+  [1m[36m (1.8ms)[0m  [1mSELECT COUNT(*) FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id[0m
+  [1m[35mActsAsTaggableOn::Tag Load (1.6ms)[0m  SELECT tags.*, taggings.tags_count AS count FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.4ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.5ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (13.6ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_tagcloud.html.erb (0.4ms)
+Completed 200 OK in 235ms (Views: 229.8ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/tags/fish" for ::1 at 2015-07-19 12:22:30 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"tag"=>"fish"}
+  [1m[35m (1.6ms)[0m  SELECT COUNT(*) FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id
+  [1m[36mActsAsTaggableOn::Tag Load (1.6ms)[0m  [1mSELECT tags.*, taggings.tags_count AS count FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id[0m
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.3ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+  Rendered layouts/_tagcloud.html.erb (0.1ms)
+Completed 200 OK in 251ms (Views: 246.1ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/tags/sushi" for ::1 at 2015-07-19 12:22:31 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"tag"=>"sushi"}
+  [1m[36m (1.7ms)[0m  [1mSELECT COUNT(*) FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id[0m
+  [1m[35mActsAsTaggableOn::Tag Load (1.6ms)[0m  SELECT tags.*, taggings.tags_count AS count FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.3ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.6ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (13.7ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+  Rendered layouts/_tagcloud.html.erb (0.1ms)
+Completed 200 OK in 232ms (Views: 226.7ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/tags/fish" for ::1 at 2015-07-19 12:22:34 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"tag"=>"fish"}
+  [1m[35m (2.0ms)[0m  SELECT COUNT(*) FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id
+  [1m[36mActsAsTaggableOn::Tag Load (2.4ms)[0m  [1mSELECT tags.*, taggings.tags_count AS count FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id[0m
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.4ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (15.9ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+  Rendered layouts/_tagcloud.html.erb (0.0ms)
+Completed 200 OK in 293ms (Views: 285.9ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/tags/fish" for ::1 at 2015-07-19 12:24:12 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"tag"=>"fish"}
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (1.8ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.7ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (68.9ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  [1m[35m (3.4ms)[0m  SELECT COUNT(*) FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id
+  [1m[36mActsAsTaggableOn::Tag Load (3.8ms)[0m  [1mSELECT tags.*, taggings.tags_count AS count FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id[0m
+  Rendered layouts/_tagcloud.html.erb (12.3ms)
+Completed 200 OK in 959ms (Views: 936.0ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 12:24:18 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.9ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.6ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  [1m[36m (2.3ms)[0m  [1mSELECT COUNT(*) FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id[0m
+  [1m[35mActsAsTaggableOn::Tag Load (1.9ms)[0m  SELECT tags.*, taggings.tags_count AS count FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id
+  Rendered layouts/_tagcloud.html.erb (8.0ms)
+Completed 200 OK in 325ms (Views: 317.3ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 12:28:10 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (0.7ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.7ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (44.7ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  [1m[35m (3.9ms)[0m  SELECT COUNT(*) FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id
+  [1m[36mActsAsTaggableOn::Tag Load (2.6ms)[0m  [1mSELECT tags.*, taggings.tags_count AS count FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id[0m
+  Rendered layouts/_tagcloud.html.erb (29.1ms)
+Completed 200 OK in 4254ms (Views: 4236.5ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/assets/application.self-ce66ab83a034755550201a7c38abddf5b5fd659e7deb10dc52727b8148ae7d4e.css?body=1" for ::1 at 2015-07-19 12:28:15 +0200
+
+
+Started GET "/" for ::1 at 2015-07-19 12:28:46 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.6ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.7ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.9ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (49.7ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  [1m[36m (3.9ms)[0m  [1mSELECT COUNT(*) FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id[0m
+  [1m[35mActsAsTaggableOn::Tag Load (2.5ms)[0m  SELECT tags.*, taggings.tags_count AS count FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id
+  Rendered layouts/_tagcloud.html.erb (11.5ms)
+Completed 200 OK in 3983ms (Views: 3967.0ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/assets/application.self-b9c65190cb6de6aff759b59477765c0b1b56cd0d07ed9a16f12d1428b37b5202.css?body=1" for ::1 at 2015-07-19 12:28:51 +0200
+
+
+Started GET "/" for ::1 at 2015-07-19 12:29:18 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPostImage Load (1.3ms)[0m  SELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1  [["post_id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.9ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (48.1ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  [1m[35m (2.4ms)[0m  SELECT COUNT(*) FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id
+  [1m[36mActsAsTaggableOn::Tag Load (1.8ms)[0m  [1mSELECT tags.*, taggings.tags_count AS count FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id[0m
+  Rendered layouts/_tagcloud.html.erb (10.3ms)
+Completed 200 OK in 735ms (Views: 718.2ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 12:32:05 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPostImage Load (0.6ms)[0m  [1mSELECT "post_images".* FROM "post_images" WHERE "post_images"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Post"]]
+  Rendered posts/index.html.erb within layouts/application (89.3ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  [1m[36m (2.8ms)[0m  [1mSELECT COUNT(*) FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id[0m
+  [1m[35mActsAsTaggableOn::Tag Load (1.9ms)[0m  SELECT tags.*, taggings.tags_count AS count FROM "tags" JOIN (SELECT taggings.tag_id, COUNT(taggings.tag_id) AS tags_count FROM "taggings" INNER JOIN posts ON posts.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Post' AND taggings.context = 'tags') AND (taggings.taggable_id IN(SELECT posts.id FROM "posts")) GROUP BY taggings.tag_id HAVING COUNT(taggings.tag_id) > 0) AS taggings ON taggings.tag_id = tags.id
+  Rendered layouts/_tagcloud.html.erb (8.4ms)
+Completed 200 OK in 4170ms (Views: 4153.1ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/assets/application.self-6c6cb606e5493db31dec873842bfff744f8f356f27459b431d702150cfb55e0b.css?body=1" for ::1 at 2015-07-19 12:32:10 +0200

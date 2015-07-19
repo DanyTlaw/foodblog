@@ -14,7 +14,7 @@
  *= require_self
  */
 
-
+  @import "bootstrap-sprockets";
   @import "bootstrap";
 
 .navbar{
@@ -65,3 +65,53 @@
 	border-color: #ff7373 !important;
 }
 
+.label-primary{
+	background-color: #ff7373 !important; 
+	border-color: #ff7373 !important;
+}
+#tag-cloud{
+  width: 400px;
+  line-height: 1.6em;
+	.s { 
+		background-color: #ff7373 !important; 
+		border-color: #ff7373 !important;
+		display: inline;
+		padding: 0.2em 0.6em 0.3em;
+		font-size: 75%;
+		font-weight: bold;
+		line-height: 1;
+		color: #FFF;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: baseline;
+		border-radius: 0.25em;
+	 }
+    .m { 
+    	background-color: #ff7373 !important; 
+		border-color: #ff7373 !important;
+		display: inline;
+		padding: 0.2em 0.6em 0.3em;
+		font-size: 100%;
+		font-weight: bold;
+		line-height: 1;
+		color: #FFF;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: baseline;
+		border-radius: 0.25em;
+    }
+    .l {
+    	background-color: #ff7373 !important; 
+		border-color: #ff7373 !important;
+		display: inline;
+		padding: 0.2em 0.6em 0.3em;
+		font-size: 125%;
+		font-weight: bold;
+		line-height: 1;
+		color: #FFF;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: baseline;
+		border-radius: 0.25em;
+		}
+}

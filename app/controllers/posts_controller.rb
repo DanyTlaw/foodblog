@@ -1,7 +1,12 @@
 class PostsController < ApplicationController
 
 	def index
-		@posts = Post.all
+		if params[:search]
+			@posts = Post.tagged_with("#{params[:search]}")
+		else
+			@posts = Post.all	
+		end
+
 
 	end
 

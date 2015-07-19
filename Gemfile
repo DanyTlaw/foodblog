@@ -16,8 +16,8 @@ gem 'coffee-rails', '~> 4.1.0'
 
 # Use bootstrap for basic styling
 gem 'bootstrap-sass', '~> 3.2.0'
-
-
+# Use for tagging
+gem 'acts-as-taggable-on'
 # gem für bilder hochladen
 gem 'carrierwave'
 gem 'mini_magick'
