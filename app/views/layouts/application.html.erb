@@ -8,8 +8,11 @@
 </head>
 <body>
 <%= render "layouts/navigation" %>
-<div id="main-container">
+<div class="col-md-1"></div>
+<div class="col-md-7">
 	<%= yield %>
 </div>
+<div class="col-md-4">
+	<%= render "layouts/tagcloud" %>
 </body>
 </html>
