@@ -1,0 +1,15 @@
+ja:
+  layouts:
+    about:
+      about: "Über mich"
+      about_text: "Dieser Blog ist über alle Dinge die ich mag wie Essen, Reisen, Sprachen oder tägliche Erlebnisse. Ich hoffe Sie haben einen guten Aufenthalt auf dieser Seite."
+    navigation:
+      about_me: "Über mich"
+      blog: "Blog"
+      recipe: "Rezepte"
+      contact: "Kontakt"
+    application:
+      title: "Foodblog"
+  posts:
+    index:
+      by: "Von Ayako Kyodo" 

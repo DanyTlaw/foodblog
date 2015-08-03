@@ -1,10 +1,11 @@
 <div class="navbar navbar-default">
-	<span id="logo">Ayako Food</span>
+	<span id="logo">Ayako Blog</span>
 	<ul class="nav  nav-pills">
 
-	  <li role="presentation"><a href="#">Blog</a></li>
-	  <li role="presentation"><a href="#">About</a></li>
-	  <li role="presentation"><a href="#">Contact</a></li>
+	  <li role="presentation"><a href="#"><%= t('.blog')%></a></li>
+	  <li role="presentation"><a href="#"><%= t('.about_me') %></a></li>
+	  <li role="presentation"><a href="#"><%= t('.recipe')%></a></li>
+	  <li role="presentation"><a href="#"><%= t('.contact') %></a></li>
 	  <li>
 	  	 <form action ="<%= posts_path %>" class="navbar-form navbar-left" role="search">
             <div class="form-group">
@@ -13,5 +14,8 @@
             <button type="submit" class="btn btn-primary" ><span class="glyphicon glyphicon-search" ></span></button>
           </form>
 	  </li>
+	  <li><%= link_to "English", change_locale_path(:en)%></li>
+      <li><%= link_to "German", change_locale_path(:de)%></li>
+	  <li><%= link_to "Japanese", change_locale_path(:ja)%></li>
 	</ul>
 </div>

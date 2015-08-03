@@ -22,6 +22,15 @@ gem 'acts-as-taggable-on'
 gem 'carrierwave'
 gem 'mini_magick'
 
+# gems für i18n
+gem 'rails-i18n'
+# gem für mehrsprachige model
+gem 'globalize', '~> 5.0.0'
+
+# gem für pagination der posts
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
